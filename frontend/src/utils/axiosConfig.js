@@ -3,7 +3,7 @@ import axios from 'axios';
 
 // 1️⃣ Create an Axios instance
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5000/api',
+  baseURL: import.meta.env.VITE_API_URL || 'https://realtimecollaborationtool.vercel.app',
   // withCredentials: true, // Uncomment ONLY if using cookies-based auth
 });
 
