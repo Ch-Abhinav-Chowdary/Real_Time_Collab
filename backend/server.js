@@ -16,6 +16,12 @@ const activityRoutes = require('./routes/activityRoutes');
 
 // Initialize app and server
 const app = express();
+app.use(cors({
+  origin: ["https://deploy-mern-1whq.vercel.app"],
+  methods: ["POST", "GET"],
+  credentials: true
+  }
+));
 const server = http.createServer(app);
 
 // Connect to MongoDB
